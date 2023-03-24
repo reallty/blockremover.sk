@@ -1,0 +1,10 @@
+# Load
+
+on skript load:
+    send "&8&l[&4&lSystem&8&l] &a&lBlocks place system has enabled!" to console
+
+on place:
+  if player's world is "boxpvp":
+    if player have permission "blocks-deny":
+      wait 5 minutes
+      set block to air
